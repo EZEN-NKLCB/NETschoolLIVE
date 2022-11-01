@@ -1,1 +1,109 @@
 @charset "utf-8";
+/* clearFix */
+.clearFix::after{
+    content:"";
+    display:block;
+    height:0;
+    clear:both;
+    overflow:hidden;
+}
+
+/* header */
+body{
+    font-family: 'NanumSquare', sans-serif;
+    background-color:#ddd;
+    position:relative;
+}
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    min-width:320px;
+    width:1920px;
+}
+header .header_in{
+    position:relative;
+    top:0; left:0;
+    height:90px;
+    display:flex;
+    justify-content: center;
+    font-weight:700;
+}
+.h1_logo{
+    position:absolute;
+    top:16%; left:7%;
+    height:60px;
+}
+.h1_logo .h1_logo_a{
+    background:url('../img/main/logo_img.png') no-repeat center 50%;
+    width:200px; height:60px;
+    display:block;
+}
+.h1_logo .h1_logo_a .hidden_word{
+    position:absolute;
+    width:1px;height:1px;
+    margin:-1px;
+    overflow:hidden;
+    clip-path: polygon(0 0, 0 0, 0 0);
+}
+.main_nav{
+    display:flex;
+}
+.nav_list{
+    display:flex;
+    align-items: center;
+}
+.nav_list li a{
+    padding:0 40px;
+    color:#fff;
+    transition: all 0.4s;
+}
+/* 모루겠다 ㅠㅠㅠㅠ
+.header_in:hover{
+    background-color: #fff;
+} */
+.nav_list li a:hover{
+    color:#000;
+}
+header .fix_wrapper{
+    position:relative;
+    top:0;left:0;
+    width:100%;
+    background-color:transparent;
+}
+.nav_right {
+    position:absolute;
+    top:0; right:10%;
+    height:90px;
+    display:flex;
+    align-items: center;
+    
+}
+.nav_right ul {
+    display:flex;
+}
+.nav_right ul li {  
+    padding:0 15px;
+}
+.nav_right ul li a{  
+    color:#fff;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+.nav_right ul li a:hover{  
+    color:#000;
+    text-decoration: none;
+}
+/* iframe이 안보일경우 백그라운드로 대체 */
+#main_visual .visual_display{
+    background:url('../img/main/main_visual_bg.jpg') no-repeat center;
+    height:975px;
+    display:flex;
+    align-items: center;
+}
+#main_visual .visual_display iframe{
+    width:1920px;height:975px;
+    opacity: 1;
+    position:absolute;
+    transform:translate(-50%, -50%);
+}

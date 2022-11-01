@@ -11,7 +11,6 @@
 /* header */
 body{
     font-family: 'NanumSquare', sans-serif;
-    background-color:#ddd;
     position:relative;
 }
 header{
@@ -19,7 +18,8 @@ header{
     top:0;
     left:0;
     min-width:320px;
-    width:1920px;
+    width:100%;
+    z-index: 999;
 }
 header .header_in{
     position:relative;
@@ -28,6 +28,7 @@ header .header_in{
     display:flex;
     justify-content: center;
     font-weight:700;
+    font-size:18px;
 }
 .h1_logo{
     position:absolute;
@@ -35,7 +36,7 @@ header .header_in{
     height:60px;
 }
 .h1_logo .h1_logo_a{
-    background:url('../img/main/logo_img.png') no-repeat center 50%;
+    background:url('../img/main/logo_img_color.png') no-repeat center 50%;
     width:200px; height:60px;
     display:block;
 }
@@ -51,25 +52,30 @@ header .header_in{
 }
 .nav_list{
     display:flex;
-    align-items: center;
+}
+.nav_list li{
+    display:flex;
+    padding:0 40px;
 }
 .nav_list li a{
-    padding:0 40px;
-    color:#fff;
-    transition: all 0.4s;
+    display:flex;
+    align-items: center;
+    color:#000;
+    transition: all 0.3s;
 }
 /* 모루겠다 ㅠㅠㅠㅠ
 .header_in:hover{
     background-color: #fff;
 } */
 .nav_list li a:hover{
-    color:#000;
+    color:#361193;
 }
 header .fix_wrapper{
     position:relative;
     top:0;left:0;
     width:100%;
-    background-color:transparent;
+    background-color:#fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 .nav_right {
     position:absolute;
@@ -86,24 +92,54 @@ header .fix_wrapper{
     padding:0 15px;
 }
 .nav_right ul li a{  
-    color:#fff;
-    text-decoration: none;
-    transition: all 0.4s;
-}
-.nav_right ul li a:hover{  
     color:#000;
     text-decoration: none;
+    transition: all 0.4s;
+    font-size:15px;
+}
+.nav_right ul li a:hover{  
+    color:#361193;
+    text-decoration: none;
+    border-bottom:2px #361193;
 }
 /* iframe이 안보일경우 백그라운드로 대체 */
 #main_visual .visual_display{
-    background:url('../img/main/main_visual_bg.jpg') no-repeat center;
-    height:975px;
+    position:relative;
+    background:#361193 url('../img/main/main_visual_bg.jpg') no-repeat center;
+    height:100vh;
     display:flex;
     align-items: center;
+    justify-content: center;
+    overflow:hidden;
 }
+/* iframe */
 #main_visual .visual_display iframe{
-    width:1920px;height:975px;
+    width:1920px;
     opacity: 1;
     position:absolute;
+    top:50%; left:50%;
     transform:translate(-50%, -50%);
+    display: block;
+}
+
+
+/* 메인컨텐츠 */
+.main_txtarea{
+    position:relative;
+    text-align:center;
+    padding:0 60px;
+    margin:0 auto;
+}
+.top_txt .txt_main{
+    display:block;
+    margin:0 auto 50px;
+}
+.top_txt .mid_txt{
+    margin-bottom:25px;
+}
+.top_txt .mid_p{
+    padding-top:25px;
+    color:#fff;
+    font-size:26px;
+    letter-spacing: 2.6px;
 }

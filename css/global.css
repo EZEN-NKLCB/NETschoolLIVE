@@ -130,10 +130,14 @@ header .fix_wrapper{
     padding:0 60px;
     margin:0 auto;
 }
-.top_txt .txt_main{
+.main_txtarea .txt_main{
     display:block;
     margin:0 auto 50px;
 }
+
+.top_txt{
+    position:relative;
+    animation:slideUpAni 1.9s 0.7s cubic-bezier(0.26, 0.35, 0.68, 0.85) forwards}
 .top_txt .mid_txt{
     margin-bottom:25px;
 }
@@ -142,4 +146,184 @@ header .fix_wrapper{
     color:#fff;
     font-size:26px;
     letter-spacing: 2.6px;
+}
+.scroll_down {
+    position:absolute;
+    right:2%;
+    bottom:0px;
+    /* font-size:0; */
+}
+.scroll_down .down_txt{
+    font-size:18px;
+    font-weight:900;
+    line-height: 1.7;
+    transform:rotate(90deg);
+    transform-origin:50% 0;
+}
+.scroll_down .down_txt a{
+    color:rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    font-weight:500;
+
+}
+.scroll_down .sc_down_bar{
+    position:relative;
+    width:2px;
+    height:60px;
+    display:inline-flex;
+    background:rgba(255, 255, 255, 0.6);
+    overflow:hidden;
+}
+.scroll_down .sc_down_bar::after{
+    content: "";
+    position:absolute;
+    top:0px;left:0px;
+    width:2px; height:30px;
+    background:#fff;
+    animation: scrollAni 1.9s cubic-bezier(0.26, 0.35, 0.68, 0.85) infinite;
+}
+
+/* 애니메이션 */
+/* 크롬, 파폭, 오페라, 엣지? */
+/* 페이드업 */
+@-webkit-keyframes slideUpAni{
+    0% {
+        bottom:-50px;
+        opacity:0.2;
+    }
+
+    25% {
+        bottom:-40px;
+        opacity:0.4;
+    }
+
+    45% {
+        bottom:-25px;
+        opacity:0.6;
+    }
+    
+    75%{
+        bottom:-10px;
+        opacity:0.8;
+    }
+
+    100%{
+        bottom:0px;
+        opacity:1;
+    }
+}
+@-moz-keyframes slideUpAni{
+    0% {
+        bottom:-50px;
+        opacity:0.2;
+    }
+
+    25% {
+        bottom:-40px;
+        opacity:0.4;
+    }
+
+    45% {
+        bottom:-25px;
+        opacity:0.6;
+    }
+    
+    75%{
+        bottom:-10px;
+        opacity:0.8;
+    }
+
+    100%{
+        bottom:0px;
+        opacity:1;
+    }
+}
+@-o-keyframes slideUpAni{
+    0% {
+        bottom:-50px;
+        opacity:0.2;
+    }
+
+    25% {
+        bottom:-40px;
+        opacity:0.4;
+    }
+
+    45% {
+        bottom:-25px;
+        opacity:0.6;
+    }
+
+    75%{
+        bottom:-10px;
+        opacity:0.8;
+    }
+
+    100%{
+        bottom:0px;
+        opacity:1;
+    }
+}
+@keyframes slideUpAni{
+    0% {
+        bottom:-50px;
+        opacity:0.2;
+    }
+
+    25% {
+        bottom:-40px;
+        opacity:0.4;
+    }
+
+    45% {
+        bottom:-25px;
+        opacity:0.6;
+    }
+    
+    75%{
+        bottom:-10px;
+        opacity:0.8;
+    }
+
+    100%{
+        bottom:0px;
+        opacity:1;
+    }
+}
+/* 스크롤 */
+@-webkit-keyframes scrollAni{
+    from {
+        top: -20px
+    }
+    
+    to { 
+        top: 60px
+    }
+}
+@-moz-keyframes scrollAni{
+    from {
+        top: -20px
+    }
+    
+    to { 
+        top: 60px
+    }
+}
+@-o-keyframes scrollAni{
+    from {
+        top: -20px
+    }
+    
+    to { 
+        top: 60px
+    }
+}
+@keyframes scrollAni{
+    from {
+        top: -20px
+    }
+    
+    to { 
+        top: 60px
+    }
 }

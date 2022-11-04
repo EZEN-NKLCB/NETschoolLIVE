@@ -10,6 +10,16 @@ html{
     clear:both;
     overflow:hidden;
 }
+/* bold h2~h3 */
+/* fixed font size 35px */
+.h2_b800{
+    font-weight:800;
+    font-size:35px;
+}
+.h3_b400{
+    font-weight:400;
+    font-size:35px;
+}
 /* normal margin */
 .area_left .m_b30{
     margin-bottom:30px;
@@ -124,7 +134,7 @@ header .fix_wrapper{
 .nav_right ul li a:hover{  
     color:#361193;
     text-decoration: none;
-    border-bottom:2px #361193;
+    border-bottom:3px #361193;
 }
 /* iframe이 안보일경우 백그라운드로 대체 */
 #main_visual .visual_display{
@@ -401,6 +411,20 @@ header .fix_wrapper{
     background:#843af2;
     color:#fff;
 }
+.a_btn_go_w{
+    display:inline-block;
+    padding:20px 40px;
+    color:#fff;
+    background:transparent;
+    border:1px solid #fff;
+    font-size:18px;
+    font-weight:700;
+    transition: all 0.3s;
+}
+.a_btn_go_w:hover{
+    background:#fff;
+    color:#843af2;
+}
 #main_contents_curriculum .free_pass{
     width:1433px;
     margin:130px auto;
@@ -511,7 +535,7 @@ header .fix_wrapper{
 /* 합격스토리 */
 /* 왼쪽 합격자이미지 */
 .main_cont_story{
-    padding:130px 0;
+    padding:115px 0;
     background-color:#f6f6f6;
 }
 .main_cont_story .story_wrapper{
@@ -639,6 +663,101 @@ header .fix_wrapper{
 .list_area_bottom .img_list li:nth-child(3) img{
     top:0;left:0;
 }
+/* 취업자명단 */
+#name_list{
+    height:800px;
+    overflow:hidden;
+    background-color:#5923ad;
+}
+.name_wrapper{    
+    width: 1448px;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-direction: row;
+
+}
+.name_list_title{
+    width:480px;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    color:#fff;
+    height:100%;
+}
+.name_list_title .flex_btn_area{
+    margin-top:50px;
+}
+.name_list_title p {
+    font-size:20px;
+    color:#e0d4f3;
+}
+.name_list_container{
+    display:flex;
+    justify-content: space-between;
+    width:844px; height:100%;
+}
+.name_list_scroll{
+    animation: updownscroll 30s linear infinite ;
+}
+.scroll_list{
+    display:flex;
+    justify-content: space-between;
+    flex-flow: column;
+    height:100%;
+}
+.scroll_list li{
+    position:relative;
+    z-index:99;
+    width:380px;
+    margin-bottom:15px;
+    padding:10px;
+    background:#f8f8f8;
+}
+.scroll_list li::before{
+    content: "";
+    position:absolute;
+    top:0; right:20px;
+    width:55px; height:55px;
+    background:url('../img/icon/icon-medal.svg') no-repeat center / contain;
+    z-index:9;
+}
+.scroll_list li::after{
+    content: "";
+    position:absolute;
+    bottom:0; right:0;
+    width:0; height:0;
+    border-width:0 0 165px 208px;
+    border-style:solid;
+    border-color: transparent transparent #f0f0f0 transparent;
+    z-index:0;
+}
+.scroll_list li .inner_wrap{
+    position: relative;
+    z-index:99;
+    border:1px solid #ccc;
+    padding:25px 36px;
+}
+.num{
+    font-size:18px;
+    font-weight:800;
+    color:#843af2;
+}
+.h3_title{
+    font-size:24px;
+    font-weight:800;
+    padding:9px 0 35px;
+}
+.text_item{
+    color:#555;
+    font-size:16px;
+    line-height: 1.5;
+}
+
+
+
+
 /* footer */
 #main_footer {
     background:#222;
@@ -938,5 +1057,38 @@ footer .copyright_area{
 @keyframes spinMotion{
     0%{
         transform: rotate(-360deg);
+    }
+}
+/* 취업처리스트 위에서아래로 */
+@-webkit-keyframes updownscroll{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-1570.8px);
+    }
+}
+@-moz-keyframes updownscroll{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-1570.8px);
+    }
+}
+@-o-keyframes updownscroll{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-1570.8px);
+    }
+}
+@keyframes updownscroll{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-1570.8px);
     }
 }

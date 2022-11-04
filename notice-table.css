@@ -13,7 +13,7 @@ position: relative;
     padding: 40px 0;
 }
 
-h2{
+.title{
     text-align: center;
     font-size: 2em;
     float: inline-start;
@@ -48,6 +48,9 @@ form{
     
     width: 1204px;
     margin: 0 auto;
+    display: flex; 
+    justify-content: space-between;
+    align-items: flex-end;
 }
 input{
 outline: none;
@@ -139,7 +142,7 @@ table {
     }
    
     
-}
+
 .img{
     width: 8px; height: 13px; 
     

@@ -1,12 +1,16 @@
 @charset "utf-8";
 
 body{   font-family: 'NanumSquare', sans-serif; line-height: 1.4;
-color: #222; margin: 20px; }
+color: #222; margin: 20px; padding: 0; margin: 0;
+}
 
+header{
+height: 90px; background-color: lightpink;
+position: relative;
+}
 .review{
-   width: 1130px; margin: auto;
+   width: 1204px; margin: auto;
     padding: 40px 0;
-    position: relative;
 }
 
 h2{
@@ -25,10 +29,10 @@ h2{
     display: block;
     position: absolute;
     
-    top: 90px;
-    left: 820px;
+    top: 147px;
+    left: 865px;
     width: 45px;
-    height: 42px;
+    height: 45px;
     border-radius: 50%;
     background-color: #843af2;
     opacity: 0.15;
@@ -42,7 +46,7 @@ form{
     height: 70px;
     border-bottom: 1px solid #000;
     
-    width: 1130px;
+    width: 1204px;
     margin: 0 auto;
 }
 input{
@@ -50,7 +54,6 @@ outline: none;
 border: none;
 width: 250px;
 border-bottom: 1px #666 solid;
-
 }
 .input{
     float: right;
@@ -63,7 +66,7 @@ button{
     background-color: #fff;
 }
 table{
-
+    padding: 20px 0;
     margin: 0 auto;
 }
 a{
@@ -91,7 +94,7 @@ table {
 }
 
 .w-10{
-    width: 100px;
+    width: 120px;
 }
 .w-50{
     width: 625px;
@@ -105,14 +108,35 @@ table {
     font-size: 14px;
     margin-top: 45px;
 }
+ ul { 
+    margin: 50px 0;}
+    
 
-ul li{
+/* ul li{
     list-style: none;
     float: left;
     text-align : center;
-    
+     */
     /* padding: 15px 0px; */
-   width: 30px; height: 20px; line-height: 20px;
+    .page_num {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+    }
+    .page_num li a {
+        padding: 0 15px;
+        color: #999;
+    }
+    .page_num li a:hover {
+        color: #843af2;
+    }
+    .page_num li:nth-child(6) img {
+        width: 8px; height: 12px;
+    }
+    .page_num li:nth-child(7) img {
+        width: 13px; height: 12px;
+    }
    
     
 }

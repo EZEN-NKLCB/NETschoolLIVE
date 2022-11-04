@@ -194,6 +194,9 @@ main .box2 .review table tbody tr {
 main .box2 .review table tbody tr:nth-child(1) {
     background-color: #faf6ff;
 }
+main .box2 .review table tbody tr th a {
+    color: #843af2;
+}
 main .box2 .review table tbody td:nth-child(2) {
     text-align: left;
 }

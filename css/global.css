@@ -2,6 +2,9 @@
 html{
     scroll-behavior: smooth;
 }
+b, strong{
+    font-weight:800;
+}
 /* clearFix */
 .clearFix::after{
     content:"";
@@ -9,6 +12,10 @@ html{
     height:0;
     clear:both;
     overflow:hidden;
+}
+/* text col */
+.col_black{
+    color:#000;
 }
 /* bold h2~h3 */
 /* fixed font size 35px */
@@ -136,6 +143,28 @@ header .fix_wrapper{
     text-decoration: none;
     border-bottom:3px #361193;
 }
+.drop_nav{
+    position: relative;
+    width:1903px;
+    background-color:#f6f7fc;
+}
+.drop_nav .sub_nav__line{
+    display:flex;
+    justify-content: center;
+}
+.sub_nav__line .sub_nav__list{
+    text-align:center;
+    padding-top:30px;
+}
+.drop_nav .sub_nav__line .blank_list{
+    width:100px;
+}
+.sub_nav__line .sub_nav__list li{
+    padding:0 25px;
+    margin-bottom:10px;
+}
+/* header end */
+
 /* iframe이 안보일경우 백그라운드로 대체 */
 #main_visual .visual_display{
     position:relative;
@@ -665,7 +694,7 @@ header .fix_wrapper{
 }
 /* 취업자명단 */
 #name_list{
-    height:800px;
+    /* height:800px; */
     overflow:hidden;
     background-color:#5923ad;
 }
@@ -749,21 +778,180 @@ header .fix_wrapper{
     font-weight:800;
     padding:9px 0 35px;
 }
+h3.sub_title{
+    font-size:20px;
+}
 .text_item{
     color:#555;
     font-size:16px;
     line-height: 1.5;
 }
+#teach_container{
+    background-color:#f6f6f6;
+}
+#teach_container .teach_wrapper{
+    width:1448px;
+    margin:0 auto;
+    padding:130px 0;
+}
+.teachwrap_up{
+    position: relative;
+    bottom:0;right:0;
+    margin-bottom:70px;
+}
+.teach_btn_line{
+    position:absolute;
+    bottom:0;right:0;
+}
+.teach_btn_line a{
+    border:1px solid #bbb;
+    float:left;
+}
+.teach_btn_line a:first-child{
+    border-right:0;
+}
+/* 선생님 리스트 김원기선생님부터가 1 */
+.teachwrap_down{
+    width:1433px;
+    overflow:hidden;
+}
+/* .teacher_list{
+} */
+.slider_teacher{
+    display:flex;
+    animation: teacherslider 50s cubic-bezier(0.65, 0.05, 0.18, 0.98) infinite;
+}
+.slider_teacher li{
+    width:25%;
+    margin-right:36px;
+}
+.slider_teacher li a{
+    width:calc(346px - 86px); height:440px;
+    display:block;
+    padding:50px 40px 0;
+    background:#fff;
+}
+.slider_teacher li a .intro_comment{
+    font-weight:700;
+    font-size:18px;
+    line-height:1.6;
+    color:#843af2;
+}
+.slider_teacher li a .main_comment{
+    font-weight:700;
+    font-size:30px;
+    color:#000;
+    line-height: 1.31;
+    margin: 4px 0 11px;
+}
+.slider_teacher li a p:nth-child(3){
+    font-size:20px;
+}
+.slider_teacher li a{
+    background:#fff no-repeat bottom right;
+}
+/* 선생님 백그라운드 너무 싫다진짜; */
+.slider_teacher li:nth-child(1) a{
+    background-image:url('../img/main/won.png');
+}
+.slider_teacher li:nth-child(2) a{
+    background-image:url('../img/main/ryu.png');
+}
+.slider_teacher li:nth-child(3) a{
+    background-image:url('../img/main/kimji.png');
+}
+.slider_teacher li:nth-child(4) a{
+    background-image:url('../img/main/seo.png');
+}
+.slider_teacher li:nth-child(5) a{
+    background-image:url('../img/main/star.png');
+}
+.slider_teacher li:nth-child(6) a{
+    background-image:url('../img/main/jo.png');
+}
+.slider_teacher li:nth-child(7) a{
+    background-image:url('../img/main/leeso.png');
+}
+.slider_teacher li:nth-child(8) a{
+    background-image:url('../img/main/lee.png');
+}
+.slider_teacher li:nth-child(9) a{
+    background-image:url('../img/main/im.png');
+}
+.slider_teacher li:nth-child(10) a{
+    background-image:url('../img/main/leeso.png');
+}
 
-
-
-
+/* 메인 엔터테인먼트 */
+/* 와 ㅠㅠ 드디어 마지막!!!!!!! */
+/* #main_enter_area{
+} */
+#main_enter_area .enter_wrapper{
+    width:1448px;
+    padding:130px 0;
+    margin:0 auto;
+}
+.enter_wrapper .enter_title{
+    font-size:30px;
+    margin-bottom:70px;
+}
+.enter_list_wrap{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:36px;
+}
+.enter_list_wrap a{
+    width:462px;   
+    padding-top:270px;
+    background:no-repeat center / contain;
+}
+.enter_list_wrap .bg_volun{
+    background-image:url('../img/main/volunteer.jpg');
+}
+.enter_list_wrap .bg_review{
+    background-image:url('../img/main/review.png');
+}
+.enter_list_wrap .bg_test{
+    background-image:url('../img/main/test.jpg');
+}
+.enter_mento{
+    background-image:linear-gradient(to right, #483598, #605bdf);
+}
+.enter_mento .mento_wrapper{
+    background-image:url('../img/main/main-entertain-bg.svg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding:67px 100px;
+    color:#fff;
+}
+.mento_wrapper{
+    display:flex;
+    justify-content: space-between;
+}
+.mento_wrapper .mento_txt h3{
+    line-height:1.6;
+    font-size:20px;
+}
+.mento_wrapper .mento_txt h2{
+    line-height:1.4;
+    font-size:40px;
+    margin-top:15px; 
+}
+.mento_wrapper .mento_txt h2 span{
+    display: block;
+    font-weight: 800;
+}
+.mento_btn{
+    display:flex;
+    align-items: center;
+}
 /* footer */
 #main_footer {
     background:#222;
     width:1433px;
     height:340px;
     padding:60px 235px;
+
 }
 footer .footer_link{
     display:flex;
@@ -1065,7 +1253,7 @@ footer .copyright_area{
         transform: translateY(0);
     }
     100%{
-        transform: translateY(-1570.8px);
+        transform: translateY(-1370.8px);
     }
 }
 @-moz-keyframes updownscroll{
@@ -1073,7 +1261,7 @@ footer .copyright_area{
         transform: translateY(0);
     }
     100%{
-        transform: translateY(-1570.8px);
+        transform: translateY(-1370.8px);
     }
 }
 @-o-keyframes updownscroll{
@@ -1081,7 +1269,7 @@ footer .copyright_area{
         transform: translateY(0);
     }
     100%{
-        transform: translateY(-1570.8px);
+        transform: translateY(-1370.8px);
     }
 }
 @keyframes updownscroll{
@@ -1089,6 +1277,111 @@ footer .copyright_area{
         transform: translateY(0);
     }
     100%{
-        transform: translateY(-1570.8px);
+        transform: translateY(-1370.8px);
+    }
+}
+/* 선생님 리스트 오른쪽에서 왼쪽으로 */
+@-webkit-keyframes teacherslider{
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(-366px);
+    }
+    20%{
+        transform: translateX(-732px);
+    }
+    30%{
+        transform: translateX(-1098px);
+    }
+    40%{
+        transform: translateX(-1464px);
+    }
+    50%{
+        transform: translateX(-1830px);
+    }
+    60%{
+        transform: translateX(-2196px);
+    }
+    100%{
+        transform: translateX(-2562px);
+    }
+}
+@-moz-keyframes teacherslider{
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(-366px);
+    }
+    20%{
+        transform: translateX(-732px);
+    }
+    30%{
+        transform: translateX(-1098px);
+    }
+    40%{
+        transform: translateX(-1464px);
+    }
+    50%{
+        transform: translateX(-1830px);
+    }
+    60%{
+        transform: translateX(-2196px);
+    }
+    100%{
+        transform: translateX(-2562px);
+    }
+}
+@-o-keyframes teacherslider{
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(-366px);
+    }
+    20%{
+        transform: translateX(-732px);
+    }
+    30%{
+        transform: translateX(-1098px);
+    }
+    40%{
+        transform: translateX(-1464px);
+    }
+    50%{
+        transform: translateX(-1830px);
+    }
+    60%{
+        transform: translateX(-2196px);
+    }
+    100%{
+        transform: translateX(-2562px);
+    }
+}
+@keyframes teacherslider{
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(-366px);
+    }
+    20%{
+        transform: translateX(-732px);
+    }
+    30%{
+        transform: translateX(-1098px);
+    }
+    40%{
+        transform: translateX(-1464px);
+    }
+    50%{
+        transform: translateX(-1830px);
+    }
+    60%{
+        transform: translateX(-2196px);
+    }
+    100%{
+        transform: translateX(-2562px);
     }
 }

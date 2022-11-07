@@ -25,7 +25,11 @@ color: #222; margin: 20px; padding: 0; margin: 0;
 .title{
     text-align: center;
     font-size: 2em;
+    position: absolute;
+    clear: both;
+    top: 300px; right: auto;
     padding: 50px;
+    /* height: 180px; line-height: 180px;  */
     font-weight: bold;
     margin:0;
 
@@ -85,8 +89,6 @@ table a{
     list-style: none;
     text-decoration: none;
 }
-.rp-thead{
-}
 
 th{
     color: #843af2;
@@ -108,6 +110,10 @@ table {
 }
 .w-50{
     width: 625px;
+    /* text-align: left; */
+}
+tbody .w-50 {
+    text-align: left;
 }
 .w-15{
     width: 160px;

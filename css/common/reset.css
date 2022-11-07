@@ -42,3 +42,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* a태그 데코레이션 제거 */
+a{
+	text-decoration: none;
+}

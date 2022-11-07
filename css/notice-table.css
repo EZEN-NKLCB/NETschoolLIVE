@@ -4,6 +4,13 @@ body{   font-family: 'NanumSquare', sans-serif; line-height: 1.4;
 color: #222; margin: 20px; padding: 0; margin: 0;
 }
 
+#notice_table{ /* 서브페이지 섹션 */
+    padding-top:90px;
+}
+.box1{/* 서브페이지 공백주기 */
+    position:relative;
+    padding-top:90px;
+}
 
 .review{
    width: 1204px; margin: auto;
@@ -11,16 +18,16 @@ color: #222; margin: 20px; padding: 0; margin: 0;
     
 }
 
+/* title */
+.sub_title_container{
+    position:relative;
+}
 .title{
     text-align: center;
     font-size: 2em;
-    position: absolute;
-    clear: both;
-    top: 300px; right: auto;
     padding: 50px;
-    /* height: 180px; line-height: 180px;  */
     font-weight: bold;
-
+    margin:0;
 
 }
 .title::before {
@@ -28,14 +35,15 @@ color: #222; margin: 20px; padding: 0; margin: 0;
     display: block;
     position: absolute;
     
-    top: 147px;
-    left: 865px;
+    bottom: 68px;
+    left: 871px;
     width: 45px;
     height: 45px;
     border-radius: 50%;
     background-color: #843af2;
     opacity: 0.15;
 }
+/* title end */
 .notice {
     color: #222; background-color: #faf6ff;;
 }

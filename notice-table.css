@@ -4,22 +4,21 @@ body{   font-family: 'NanumSquare', sans-serif; line-height: 1.4;
 color: #222; margin: 20px; padding: 0; margin: 0;
 }
 
-header{
-height: 90px; background-color: lightpink;
-position: relative;
-}
+
 .review{
    width: 1204px; margin: auto;
-    padding: 40px 0;
+    padding: 40px 0; 
+    
 }
 
 .title{
     text-align: center;
     font-size: 2em;
-    float: inline-start;
+    position: absolute;
+    clear: both;
     top: 300px; right: auto;
-
-    height: 180px; line-height: 180px; 
+    padding: 50px;
+    /* height: 180px; line-height: 180px;  */
     font-weight: bold;
 
 
@@ -72,7 +71,7 @@ table{
     padding: 20px 0;
     margin: 0 auto;
 }
-a{
+table a{
     display: inline-block;
     color: inherit;
     list-style: none;

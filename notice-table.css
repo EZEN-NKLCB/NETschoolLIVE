@@ -17,9 +17,9 @@ position: relative;
     text-align: center;
     font-size: 2em;
     float: inline-start;
-    top: 200px; right: auto;
+    top: 300px; right: auto;
 
-    height: 200px; line-height: 200px; 
+    height: 180px; line-height: 180px; 
     font-weight: bold;
 
 
@@ -43,11 +43,11 @@ position: relative;
 
 
 form{
-    height: 70px;
+    height: 60px;
     border-bottom: 1px solid #000;
     
     width: 1204px;
-    margin: 0 auto;
+    margin: 0 auto; padding: 20px 0;
     display: flex; 
     justify-content: space-between;
     align-items: flex-end;

@@ -11,19 +11,19 @@ color: #222; margin: 20px; padding: 0; margin: 0;
     
 }
 
-.title{
+div .title{
     text-align: center;
     font-size: 35px;
     /* position: absolute;
     clear: both; */
  
-    padding-top: 123px;
-    height: 180px; line-height: 180px;  
+    padding-top: 133px;
+    height: 160px; line-height: 160px;  
     font-weight: bold;
 
 
 }
-.title::before {
+div .title::before {
     content: '';
     display: block;
     position: absolute;
@@ -42,22 +42,25 @@ form{
     border-bottom: 1px solid #000; 
     
     width: 1204px;
-    margin: 0 auto; padding: 5px 0;
+    margin: 0 auto; padding:  0;
     display: flex; 
     justify-content: space-between;
     align-items: flex-end;
-    color: #222; font-size: 14px; padding-bottom: 30px;
+    color: #666; font-size: 14px; padding-bottom: 25px;
 }
-input{
-outline: none;
-border: none;
-width: 300px;
-border-bottom: 1px #666 solid;
+form input{
+    outline: none;
+    border: none;
+    width: 310px; padding:15px 0;
+    border-bottom: 1px #666 solid; color: #666;
 }
-.input{
+form  input:hover{
+    border-bottom: #843af2 1px solid;
+}
+form .input{
     float: right;
 }
-button{
+form button{
     outline: none;
     border: none;
     border-radius: 0;
@@ -65,7 +68,7 @@ button{
     background-color: #fff;
 }
 table{
-    padding: 20px 0;
+    padding: 13px 0;
     margin: 0 auto;
 }
 .notice {
@@ -131,7 +134,7 @@ tbody .w-50 {
         font-size: 14px;
     }
     .page_num li a {
-        padding: 0 15px;
+        padding: 0 13px;
         color: #999;
     }
     .page_num li a:hover {

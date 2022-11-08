@@ -213,3 +213,8 @@ main .box2 .review .page_num li:nth-child(6) img {
 main .box2 .review .page_num li:nth-child(7) img {
     width: 13px; height: 12px;
 }
+main .box2 .review .page_num .active {
+    color: #843af2;
+    font-weight: bold;
+    text-decoration: underline;
+}

@@ -1,8 +1,8 @@
-function drop(){
-    var list = document.getElementsByClassName("sub_nav__list");
-    if(list.style.display=="none"){
-        list.style.display = 'block';
-    }else{
-        list.style.display='none';
-    }
-}
+$(document).ready(function(){
+    $("nav").mouseover(function(){
+        $("div.nav_bg").css("display","block");
+    })
+    $("nav").mouseout(function(){
+        $("div.nav_bg").css("display", "none");
+    })
+})

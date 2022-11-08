@@ -158,6 +158,7 @@ main .box2 .review form input:hover {
 }
 main .box2 .review form input:focus {
     outline: none;
+    border-bottom: 1px solid #5923ad;
 }
 main .box2 .review form button {
     width: 23px; height: 23px;

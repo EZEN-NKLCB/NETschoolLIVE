@@ -276,6 +276,25 @@ header .fix_wrapper{
   border-bottom:3px #361193;
 }
 
+#main_visual .visual_display{
+  position:relative;
+  background:#361193 url('../img/main/main_visual_bg.jpg') no-repeat center;
+  height:100vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  overflow:hidden;
+}
+/* iframe */
+#main_visual .visual_display iframe{
+  width:1903px;
+  opacity: 1;
+  position:absolute;
+  top:50%; left:50%;
+  transform:translate(-50%, -50%);
+  display: block;
+}
+
 /* 본문시작 */
 #course {
   padding-left: 60px;
@@ -292,7 +311,7 @@ header .fix_wrapper{
   margin: 0 auto;
 }
 section .wrapper-top{
-    background: url(../img/classes-subtop-bg_except.jpg)no-repeat ;
+    background: url(../img/goods/classes-subtop-bg_except.jpg)no-repeat ;
     background-size: 100%;
 }
 .wrapper-top .main-top{

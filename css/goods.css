@@ -61,6 +61,7 @@ button{
 }
 button:hover{
   background-color: #371272;
+  cursor: pointer;
 }
 
 a{
@@ -76,8 +77,9 @@ a{
   font-size: 18px;
 }
 .price-wrapper{
-  width:397.012px; height:81px;
+  width:386.012px; height:81px;
   margin-top: 28px;
+  line-height: 1.5;
 }
 
 .price-align{
@@ -103,6 +105,7 @@ a{
   color: #999;
   font-size: 15px;
   text-decoration:line-through;
+  margin-right: 10px;
 }
 
 /* 헤더 네비부분 
@@ -342,8 +345,8 @@ section .bottom-wrapper{
   justify-content: space-between;
   /* border: 3px solid black; */
   margin: 0 auto;
-  padding-bottom: 100px;
-  margin-bottom: 100px;  
+  padding-bottom: 50px;
+  margin-bottom: 50px;  
 }
 
 article{
@@ -431,6 +434,8 @@ article{
 #first-list .img-class{
   width: 159px; height: 159px;
   object-fit: none;
+  
+  margin-top: 100px;
 }
 #first-list .text-box{
   height:280px ; width:375px;
@@ -439,7 +444,7 @@ article{
   font-size: 16px;
   color: #555;
   font-weight: 400;
-  padding-left: 15px;
+  padding-left: 30px;
 }
 #first-list .price-wrapper{
   position: absolute;
@@ -478,11 +483,10 @@ article{
   justify-content: space-around;
 }
 #second-list .img-class{
-  width: 159px; height: 159px;
-  object-fit: none;
+  margin-top: 70px;
 }
 #second-list .text-box{
-  height:280px ; width:375px;
+  height:280px; width:375px;
   line-height: 1.57;
   margin-top: 0;
   font-size: 16px;
@@ -493,6 +497,7 @@ article{
 #second-list .price-wrapper{
   position: absolute;
   bottom: 50px; right: 50px;
+  margin-bottom: 50px;
 }
 
 /* 3번째 수강신청박스 */
@@ -526,8 +531,7 @@ article{
   justify-content: space-around;
 }
 #third-list .img-class{
-  width: 159px; height: 159px;
-  object-fit: none;
+  margin-top: 80px;
 }
 #third-list .text-box{
   height:280px ; width:375px;
@@ -546,7 +550,7 @@ article{
 /* 4번째 수강신청박스 */
 
 #fourth-list{
-  width: 1347px; height: 400px;
+  width: 1347px; height: 380px;
   padding: 50px;
   line-height: 1.5;
 
@@ -565,8 +569,11 @@ article{
 }
 #fourth-list .text-box{
   padding-left: 30px;
-  
+  font-size: 16px;  
+  font-weight: 400;
+  color: #555;
 }
+
 .text-box h2{
   font-size: 28px;
   
@@ -644,6 +651,7 @@ article{
 }
 #free-pass-all button:hover{
   background-color:#555;
+  cursor: pointer;
 }
 
 /* 프리패스 원패스 신청박스 */
@@ -686,6 +694,7 @@ article{
 }
 #free-pass-one button:hover{
   background-color:#555;
+  cursor: pointer;
 }
 
 /* 주의사항 */
@@ -693,13 +702,16 @@ article{
 .wrapper-attention{
   background-color: #f8f8f8;
   width: 100%;
-  padding: 100px 0;
-  
+  padding: 100px 0;  
 }
+.wrapper-attention .guide{
+  font-weight: bold;
+}
+
 .wrapper-attention .attention{
   background-color: white;
   border: 1px solid #ddd;
-  line-height: 1.5;
+  line-height: 2;
   padding: 50px;
   width: 1345px;
   margin: 0 auto;

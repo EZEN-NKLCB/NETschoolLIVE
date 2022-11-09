@@ -160,148 +160,12 @@ body{
   font-family: 'NanumSquare', sans-serif;
   position:relative;
 }
-header{
-  position:fixed;
-  top:0;
-  left:0;
-  min-width:320px;
-  width:1902px;
-  z-index: 999;
-}
-header .header_in{
-  position:relative;
-  top:0; left:0;
-  height:90px;
-  display:flex;
-  justify-content: center;
-  font-weight:700;
-  font-size:18px;
-}
-.h1_logo{
-  position:absolute;
-  top:16%; left:7%;
-  height:60px;
-}
-.h1_logo .h1_logo_a{
-  background:url('../img/main/logo_img_color.png') no-repeat center 50%;
-  width:200px; height:60px;
-  display:block;
-}
-.hidden_word{
-  position:absolute;
-  width:1px;height:1px;
-  margin:-1px;
-  overflow:hidden;
-  clip-path: polygon(0 0, 0 0, 0 0);
-}
-.main_nav{
-  display:flex;
-}
-.nav_list{
-  display:flex;
-}
-.nav_list li{
-  display:flex;
-  justify-content: center;
-  position:relative;
-  width:145px;
-  /* padding:0 40px; */
-}
-.nav_list li a{
-  display:flex;
-  align-items: center;
-  color:#000;
-  transition: all 0.3s;
-}
-.nav_list .sub_nav__list{
-  position:absolute;
-  z-index:999999;
-  top:113px;
-  left:0;
-  background-color:#f6f7fc;
-}
-.nav_list .sub_nav__list.off{
-  display:none;
-}
-.nav_list .sub_nav__list li a{
-  color:#444;
-  font-size:16px;
-  font-weight:400;
-  height:38px;
-}
-.nav_list .sub_nav__list li a:hover{
-  color:#361193;
-}
-.nav_bg{
-  position:absolute;
-  z-index:9;
-  top:90px;
-  background-color:#f6f7fc;
-  width:100%;height:293px;
-}
-.nav_bg.off{
-  display:none;
-}
 
-/* 모루겠다 ㅠㅠㅠㅠ
-.header_in:hover{
-  background-color: #fff;
-} */
-.nav_list li a:hover{
-  color:#361193;
-}
-header .fix_wrapper{
-  position:relative;
-  top:0;left:0;
-  width:100%;
-  background-color:#fff;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-.nav_right {
-  position:absolute;
-  top:0; right:10%;
-  height:90px;
-  display:flex;
-  align-items: center;
-}
-.nav_right ul {
-  display:flex;
-}
-.nav_right ul li {  
-  padding:0 15px;
-}
-.nav_right ul li a{  
-  color:#000;
-  text-decoration: none;
-  transition: all 0.4s;
-  font-size:15px;
-}
-.nav_right ul li a:hover{  
-  color:#361193;
-  text-decoration: none;
-  border-bottom:3px #361193;
-}
-
-#main_visual .visual_display{
-  position:relative;
-  background:#361193 url('../img/main/main_visual_bg.jpg') no-repeat center;
-  height:100vh;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  overflow:hidden;
-}
-/* iframe */
-#main_visual .visual_display iframe{
-  width:1903px;
-  opacity: 1;
-  position:absolute;
-  top:50%; left:50%;
-  transform:translate(-50%, -50%);
-  display: block;
-}
 
 /* 본문시작 */
+section{
+  position:relative;
+}
 #course {
   padding-left: 60px;
   padding-right: 60px;
@@ -705,7 +569,8 @@ article{
 .wrapper-attention{
   background-color: #f8f8f8;
   width: 100%;
-  padding: 100px 0;  
+  padding: 100px 0;
+  margin-bottom:-208px;  
 }
 .wrapper-attention .guide{
   font-weight: bold;

@@ -107,6 +107,7 @@ main .box2 {
     padding: 80px 0 130px 0;
 
     position: relative;
+    margin-bottom:-210px
 }
 main .box2 h2 {
     font-size: 35px;

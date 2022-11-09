@@ -132,6 +132,7 @@ tbody .w-50 {
         justify-content: center;
         align-items: center;
         font-size: 14px;
+        margin-bottom:-208px;
     }
     .page_num li a {
         padding: 0 13px;

@@ -86,7 +86,7 @@ th{
 
 }
 th, td{
-    padding: 5px; height: 60px;
+    padding: 5px 0; height: 60px;
     line-height: 60px;
     border-bottom: 1px solid #ddd;
     margin: 0 auto;
@@ -98,17 +98,17 @@ table {
 }
 
 .w-10{
-    width: 120px;
+    width: 127px;
 }
 .w-50{
-    width: 625px;
+    width: 631px;
     /* text-align: left; */
 }
 tbody .w-50 {
     text-align: left;
 }
 .w-15{
-    width: 160px;
+    width: 191px;
 }
 .page_num {
     display: flex;

@@ -722,10 +722,20 @@ article{
 .wrapper-attention .attention-inner{
   display: flex;
 }
+.wrapper-attention .inner-space{
+  padding-left: 5px;
+  position: relative;
+}
 
-.wrapper-attention p::before{
+.wrapper-attention .attention-list{
+  list-style: none;
+}
+.wrapper-attention li{
+  list-style-position: inside;
+  text-indent: -7px;
+}
+.wrapper-attention li::before{
     content: "-";
-    left: 0;
 
 }
 
@@ -733,6 +743,8 @@ article{
   display: flex;
   width: 224px;
 }
+
+
 /* footer */
 #main_footer {
   background:#222;

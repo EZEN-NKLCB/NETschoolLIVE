@@ -732,10 +732,11 @@ article{
 }
 .wrapper-attention li{
   list-style-position: inside;
-  text-indent: -7px;
+  text-indent: -14px;
 }
 .wrapper-attention li::before{
     content: "-";
+    padding-right: 7px;
 
 }
 

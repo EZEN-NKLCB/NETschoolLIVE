@@ -121,9 +121,9 @@ header .header_in{
     color:#333;
     transition: all 0.3s;
 }
-.nav_list li a:hover{
+/* .nav_list li a:hover{
     color:#361193;
-}
+} */
 .nav_list li a:after{
     content: '';
     opacity: 0;
@@ -157,7 +157,7 @@ header .header_in{
     transition: color 0.3s;
 }
 .sub_nav__list li a:hover{
-    color:#361193;
+    color:#843af2;
 }
 nav:hover .nav_bg, .sub_nav__list{
     height:263px;
@@ -206,9 +206,9 @@ header .fix_wrapper{
     transition: all 0.4s;
     font-size:15px;
 }
-.nav_right ul li a:hover{  
+/* .nav_right ul li a:hover{  
     color:#361193;
-}
+} */
 
 /* header end */
 

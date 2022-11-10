@@ -1,54 +1,4 @@
 @charset "utf-8";
-html{
-    scroll-behavior: smooth;
-}
-b, strong{
-    font-weight:800;
-}
-/* clearFix */
-.clearFix::after{
-    content:"";
-    display:block;
-    height:0;
-    clear:both;
-    overflow:hidden;
-}
-/* text col */
-.col_black{
-    color:#000;
-}
-/* bold h2~h3 */
-/* fixed font size 35px */
-.h2_b800{
-    font-weight:800;
-    font-size:35px;
-}
-.h3_b400{
-    font-weight:400;
-    font-size:35px;
-}
-/* normal margin */
-.area_left .m_b30{
-    margin-bottom:30px;
-}
-.m_t30{
-    margin-top:30px;
-}
-.m_b10{
-    margin-bottom:10px;
-}
-.m_b20{
-    margin-bottom:20px;
-}
-.m_b30{
-    margin-bottom:30px;
-}
-.m_b50{
-    margin-bottom:50px;
-}
-.m_r10{
-    margin-right:10px;
-}
 
 /* 공통 class, id 부분 파트 */
 button{
@@ -110,62 +60,14 @@ a{
   text-decoration:line-through;
   margin-right: 10px;
 }
-
-/* 헤더 네비부분 
-header{
-    height: 90px;
-    padding: 0 15px;
-    position: relative;
-
-    box-shadow:0 0 15px 0 grey;
+.hidden_word{
+  position:absolute;
+  width:1px;height:1px;
+  margin:-1px;
+  overflow:hidden;
+  clip-path: polygon(0 0, 0 0, 0 0);
 }
-header h1{
-    position: absolute;
-    top: 38%; left: 7%;
-}
-
-
-메뉴버튼 
-nav #gnb{
-    font-weight: bold;
-    font-size: 18px;
-    position: absolute;
-    left: 25%; top: 40%;
-}
-
-nav #gnb li{
-    float: left;
-}
-
-nav #gnb li a{
-    display: block;
-    padding: 0 40px;
-}
-
-nav #log-regi {
-    position: absolute;
-    right: 5%; top: 40%;
-}
-
-nav #log-regi li {
-    float: right;
-}
-
-nav #log-regi li a{
-    display: block;
-    padding: 10px;
-}*/
-/* 바디상단 */
-body{
-  font-family: 'NanumSquare', sans-serif;
-  position:relative;
-}
-
-
 /* 본문시작 */
-section{
-  position:relative;
-}
 #course {
   padding-left: 60px;
   padding-right: 60px;
@@ -569,8 +471,8 @@ article{
 .wrapper-attention{
   background-color: #f8f8f8;
   width: 100%;
-  padding: 100px 0;
-  margin-bottom:-208px;  
+  padding: 100px 0; 
+  margin-bottom:-208px; 
 }
 .wrapper-attention .guide{
   font-weight: bold;
@@ -587,10 +489,21 @@ article{
 .wrapper-attention .attention-inner{
   display: flex;
 }
+.wrapper-attention .inner-space{
+  padding-left: 5px;
+  position: relative;
+}
 
-.wrapper-attention p::before{
+.wrapper-attention .attention-list{
+  list-style: none;
+}
+.wrapper-attention li{
+  list-style-position: inside;
+  text-indent: -14px;
+}
+.wrapper-attention li::before{
     content: "-";
-    left: 0;
+    padding-right: 7px;
 
 }
 
@@ -598,102 +511,3 @@ article{
   display: flex;
   width: 224px;
 }
-/* footer */
-#main_footer {
-  background:#222;
-  width:1433px;
-  height:340px;
-  padding:60px 235px;
-
-}
-footer .footer_link{
-  display:flex;
-  justify-content: space-between;
-  border-bottom:1px solid #555;
-  padding:15px 0 40px;
-  margin-bottom:40px;
-}
-footer select{
-  background:#333;
-  padding:10px 12px;
-  color:#b2b2b2;
-  
-} 
-footer select:focus{
-  outline: none;
-} 
-.footer_link .link_list{
-  display:flex;
-  align-items: center;
-}
-.footer_link .link_list a:nth-of-type(-n+3){
-  color:#fff;
-}
-.footer_link .link_list a{
-  color:#bbb;
-  margin-right:40px;
-}
-
-footer .copyright_area{
-  display:flex;
-  justify-content: space-between;
-}
-.copyright_area .area_left{
-  width:780px;
-}
-.area_left .h2_logo{
-  margin-bottom:25px;
-}
-.area_left dl {
-  display:block;
-  float:left;
-  margin-bottom:15px;
-}
-.area_left dl dt{
-  color:#888;
-  margin-right:10px;
-}
-.area_left dl dd{
-  color:#bbb;
-  margin-right:25px;
-}
-.area_left dl dd a{
-  color:#bbb;
-}
-.area_left dl dt,dd {
-  display:inline-block;
-  font-size:14px;
-}
-.copyright_area dl{
-  display:block;
-  float:left;
-}
-.copyright_area .area_right{
-  width:675px;
-}
-.copyright_area .area_right .right_box{
-  margin-bottom:35px;
-}
-.area_right .right_box .box_h3{
-  color:#eee; 
-  font-size:16px;
-  font-weight:700;
-  margin-bottom:15px;
-}
-.area_right dl dt,dd,a{
-  display:inline-block;
-  color:#bbb;
-}
-.area_right .customer_dl{
-  margin-right:70px;
-}
-.right_box .tel_center {
-  margin-bottom:10px;
-}
-.right_box .tel_center dd {
-  margin-right:50px;
-}
-.right_box .tel_cenbottom dd {
-  margin-right:65px;
-}
-/* footer end */

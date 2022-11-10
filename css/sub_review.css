@@ -14,7 +14,7 @@ body {
     font-family: 'NanumSquare', sans-serif;
     position:relative;
 }
-a {
+.review_txt a {
     float: left;
     text-decoration: none;
 }
@@ -51,7 +51,7 @@ main .box1 .review_img a {
     float: none;
     margin: 115px auto 0;
     width: 1187px; height: 614px;
-    background-image: url(../img/sub/pass.svg), url(../img/sub/preview_img1.jpg);
+    background-image: url(../img/sub/pass.svg), url(../img/sub/review_img1.jpg);
     background-repeat: no-repeat;
     background-size: 70px 70px, cover;
     background-position: 1095px 0, 0 0;

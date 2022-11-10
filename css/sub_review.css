@@ -14,7 +14,7 @@ body {
     font-family: 'NanumSquare', sans-serif;
     position:relative;
 }
-.go_post {
+a {
     float: left;
     text-decoration: none;
 }
@@ -51,7 +51,7 @@ main .box1 .review_img a {
     float: none;
     margin: 115px auto 0;
     width: 1187px; height: 614px;
-    background-image: url(../img/sub/pass.svg), url(../img/sub/review_img1.jpg);
+    background-image: url(../img/sub/pass.svg), url(../img/sub/pass/review_img1.jpg);
     background-repeat: no-repeat;
     background-size: 70px 70px, cover;
     background-position: 1095px 0, 0 0;
@@ -107,13 +107,12 @@ main .box2 {
     padding: 80px 0 130px 0;
 
     position: relative;
-    margin-bottom:-210px
 }
 main .box2 h2 {
     font-size: 35px;
     font-weight: bold;
     padding: 0 0 70px 0;
-    /* background: url(./img/circle.png) no-repeat 845px -10px / 45px 45px; */
+    /* background: url(../img/sub/pass/circle.png) no-repeat 845px -10px / 45px 45px; */
 }
 main .box2 h2::before {
     content: '';

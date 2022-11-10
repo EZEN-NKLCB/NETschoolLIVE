@@ -142,10 +142,10 @@ tbody .w-50 {
         color: #843af2; font-weight: bold;
     }
     .page_num li:nth-child(6) img {
-        width: 8px; height: 12px;
+        width: 8px; height: 12px;padding-bottom:5px;
     }
     .page_num li:nth-child(7) img {
-        width: 13px; height: 12px;
+        width: 13px; height: 12px;padding-bottom:5px;
     }
    
     

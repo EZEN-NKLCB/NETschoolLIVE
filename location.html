@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>오시는길 - 네카라쿠배 넷스쿨라이브, 전국 속기사 교육 1위</title>
+    <!-- og -->
+    <meta property="og:title" content="넷스쿨라이브, 전국 속기사 교육 1위">
+    <meta property="og:description" content="넷스쿨라이브는 2004년 국내최초 속기사교육관련 네카라쿠배네카라쿠배네카라쿠배네카라쿠배네카라쿠배네카라쿠배">
+    <meta property="og:image" content="img/main/opengraph.png">
+    <meta property="og:url" content="https://ezen-nklcb.github.io/NETschoolLIVE">
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="img/icon/favicon.png" type="image/x-icon">
+    <!-- 폰트 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css">
+    <!-- header, footer include script -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <!-- 리셋, 폰트 -->
+    <!-- <link rel="stylesheet" href="css/common/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.css"> -->
+</head>
+<body>
+    <header w3-include-html="header.html" class="head_nav">
+        <script>
+            w3.includeHTML();
+        </script>
+    </header>
+    <section id="location_container">
+        <div class="loc_wrapper">
+            <div class="loc_left">
+                <h2 class="loc_title">오시는 길</h2>
+                <dl class="loc_list">
+                    <dt>주소</dt>
+                    <dd>서울특별시 금천구 가산디지털1로 186<br>(제이플라츠) 1106호</dd>
+                </dl>
+                <dl class="loc_list">
+                    <dt>문의</dt>
+                    <dd>02-3452-0203</dd>
+                </dl>
+                <dl class="loc_list">
+                    <dt>지하철</dt>
+                    <dd class="p_b12">1호선 가산디지털단지역 7번출구</dd>
+                    <dd>7호선 가산디지털단지역 6번출구</dd>
+                </dl>
+                <dl class="loc_list">
+                    <dt>버스</dt>
+                    <dd>571번, 652번, 653번, 5528번, 5012번 가산디지털단지역 1호선역 하차</dd>
+                </dl>
+            </div>
+            <div class="loc_right">
+                <!-- * 카카오맵 - 지도퍼가기 -->
+                <!-- 1. 지도 노드 -->
+                <div id="daumRoughmapContainer1668154100080" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+                <!--
+                    2. 설치 스크립트
+                    * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                -->
+                <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                <!-- 3. 실행 스크립트 -->
+                <script charset="UTF-8">
+                    new daum.roughmap.Lander({
+                        "timestamp" : "1668154100080",
+                        "key" : "2ci4z",
+                        "mapWidth" : "1185",
+                        "mapHeight" : "790"
+                    }).render();
+                </script>
+            </div>
+        </div>
+    </section>
+    <!-- 푸터 -->
+    <footer w3-include-html="footer.html" id="main_footer">
+        <script>
+            w3.includeHTML();
+        </script>
+    </footer>
+    <!-- 푸터끝 -->
+</body>
+</html>
